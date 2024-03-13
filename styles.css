@@ -35,3 +35,10 @@ footer{
     padding-top: 15px;
 
 }
+section {
+    font-family: 'Courier New', Courier, monospace;
+    color: blueviolet;
+    font-size: small;
+    text-align: end;
+    border:none; 
+}
