@@ -1,3 +1,16 @@
+header, nav, footer, .containder div{
+    height: 10vh;
+    border: 2px solid black;
+    margin: 5px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: fantasy;
+    font-size:x-large;
+    color:  green;
+}
+
 body > * {
     border: 4px solid black;
     margin: 10px;
@@ -19,14 +32,6 @@ nav{
     height: 40px;
     padding-bottom: 0;
     padding-top: 15px;
-}
-
-main {
-    height: 250px;
-    border-color: burlywood;
-    padding-top: 200px;
-    padding-bottom: 0;
-    
 }
 
 footer{

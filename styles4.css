@@ -1,86 +1,79 @@
-*{
-    color: green;
+body {
+    font-size: 2em;
 }
-header, nav, main, aside, footer {
+
+header, nav, footer{
+    border: 2px solid #000;
+    height: 10vh;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
-    font-family: fantasy;
-
 }
 
 header {
-    height: 100px;
-    border-top: 2px solid black;
-    border-bottom: 0;
-    border-left: 3px solid black;
-    border-right: 3px solid black;
-    border-color: green;
+    height: 15h;
 }
 
 nav {
-   height: 50px;
-   border: 3px solid black;
-   border-color: green;
+    border-top: none;
 }
 
-main {
-    padding: 26vh;
-    width: 30%;
-    height: 40px;
-    border-top: 0;
-    border-left: 2px solid black;
-    border-right: 3px solid black;
-    border-color: green;
+.container {
+    display: flex;
+    flex-direction: row;
+    border-right: 2px solid #000;
 }
 
-aside:first-child {
-    width: 160px;
-    height: 200px;
-    position: absolute;
-    top: 175px;
-    left: 850px;
-    border: 3px solid black;
-    border-color: rgb(0, 21, 248);
-
+.container .main{
+    border-bottom: none;
+    border-top: none;
+    height: 70vh;
+    width: 120%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-aside:nth-child(2) {
-    width: 410px;
-    height: 200px;
-    position: absolute;
-    top: 175px;
-    left: 1040px;
-    border: 3px solid black;
-    border-color: rgb(245, 171, 0);
+.sect_container {
+    width: 100%;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-aside:nth-child(3) {
-    width: 600px;
-    height: 180px;
-    position: absolute;
-    top: 395px;
-    left: 850px;
-    border: 3px solid black;
-    border-color: rgb(255, 0, 21);
-}
-.border{
-    border: 1px solid black;
-    border-top: 0;
-    border-right: 3px solid black;
-    border-color: green;
-   
-}
-footer{
-    height: 50px;
-    border-top: 2px solid black;
-    border-bottom: 3px solid black;
-    border-left: 3px solid black;
-    border-right: 3px solid black;
-    border-color: green;
+.sect_container .pic {
+    border: 2px solid #000;
+    height: 30vh;
+    width: calc(30% - 1%);
+    margin-right: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
+.sect_container .aboutme {
+    border: 2px solid #000;
+    height: 30vh;
+    width: calc(70% - 1%);
+    margin-right: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
 
-
-
+.recent_container {
+    border: 2px solid #000;
+    height: 37vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

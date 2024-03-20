@@ -1,58 +1,40 @@
 body {
-    margin: 5;
-    font-size: 2em;
-    font-family:fantasy;
-    
-  }
-  
-  header, nav, .contentA, main, .contentB, footer {
-    border: 3px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  main {
-    width: 600px;
-    height: 450px;
-    margin-bottom: 5px;
-    border-color: rgb(0, 4, 255);
-  }
-  
-  header, nav, footer {
-    height: 60px;
-    margin-bottom: 5px;
-  }
-  header{
-    border-color: red;
-  }
-  
-  .header-nav {
-    display: flex;
-  }
-  
-  .contentA, .contentB {
-    flex: 1;
-    margin-bottom: 5px;
-  }
-  
-  .contentA {
-    margin-right: 5px;
-    border-color: rgb(2, 247, 51);
-  
-  }
-  
-  .contentB {
-    margin-left: 5px;
-    width: 420px;
-    border-color: rgb(247, 2, 153);
-  }
-  nav{
-    border-color: rgb(246, 155, 37);
-  }
-  footer{
-    border-color: aquamarine;
-  }
+  font-size: 2em;
+}
+
+header, nav, footer {
+  border: 2px solid black;
+  height: 10vh;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  margin-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.container div{
+  border: 2px solid #000;
+  height: 70vh;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.container div:nth-child(2){
+  flex-grow: 2;
+}
+
 section {
   font-family: 'Courier New', Courier, monospace;
   color: blueviolet;
